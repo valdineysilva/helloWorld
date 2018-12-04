@@ -1,0 +1,35 @@
+<!--
+  Generated template for the OutrapaginaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>outrapagina</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <!-- <button ion-button large (click)="voltar()">Voltar</button>
+  <button ion-button large (click)="showAlert()">Mostrar alerta</button>
+ -->
+ <ion-item>
+   <ion-label stacked>
+     Primeira entrada:
+    </ion-label>
+   <ion-input [(ngModel)]="primeiroNumero"></ion-input>
+  </ion-item>
+ <ion-item>
+  <ion-label stacked>
+    Segunda entrada:
+  </ion-label>
+  <ion-input [(ngModel)]="segundoNumero"></ion-input>
+</ion-item>
+<button ion-button block (click)="somar()">+</button>  
+<button ion-button block (click)="subtrair()">-</button>  
+<p>Resultado: {{resultado}}</p>
+</ion-content>
