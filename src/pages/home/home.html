@@ -10,4 +10,11 @@
   <p>
     <button ion-button large (click)="abrirPagina()">Abrir Página</button>
   </p>
+  <ion-item>
+    <ion-label>Nome do pais:</ion-label>
+    <ion-input [(ngModel)]="nomepais"></ion-input>
+  </ion-item>
+  <button ion-button large (click)="buscaPais()">BUSCAR PAÍS</button>
+ <p>Nome: {{paisbuscado.name}}</p>   
+ <p>Região: {{paisbuscado.region}}</p> 
 </ion-content>
